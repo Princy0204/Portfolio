@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/49692110a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <span id="element"></span>
+          <h1>
+            Hi, I'm <span>Princy</span><br />
+            Pandey from Delhi India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- about------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./one1.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              "Hello, I'm Princy, a computer science enthusiast and frontend
+              developer.I am Persuing B.tech in CSE specialization with data science from ABES engineering college I have keen interest in Java . I have completed 2 projects.The 1st project is E-paramarsh which is a counselling website it aimed at assisting students in finding and selecting engineering colleges based on their preferences. The platform allows users to filter colleges using parameter such as fees, which makes the search process efficient using technologies like HTML, CSS, JavaScript and PHP. And 2 project is Customer segmentation . The aim of this project is to analyze customer data to segment them into distinct clusters. This segmentation helps in understanding customer behavior and preferences, which can guide targeted marketing strategies and improve customer satisfaction. 
+              Talking about my technical skills I have learned programming languages such as java,python. In addition, I have experience in front-end technologies like HTML, CSS, and JavaScript.
+              Moving towards my strength I am  Self motivated, quick learner , optimistic  and team player. 
+              . Some of my friends say that I have good communication skills. In my free time, I love to dance as it keeps me fit. I am willing to take any kind of opportunity in your company that will allow my skills to grow.
+              
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+             
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Java</span><br />Problem Solving
+ 
+                </li>
+                <li>
+                  <span>Data Science</span><br />Panda, Numpy, Scikit Learn
+                </li>
+                <li>
+                  <span>Cloud Computing</span><br />AWS cloud
+                </li>
+                <li>
+                  <span>Frontend Developer</span><br />Designing Web
+                </li>
+                <li>
+                  <span>SQL</span><br />
+                </li>
+                <li>
+                  <span>Python</span><br />
+                </li>
+               
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-2025</span><br />
+                  Pursuing Btech in `Computer Science Engineering(Data Science)` From ABES Engineering College Ghaziabd.(75%)
+                </li>
+                <li>
+                  <span>2019-2020</span><br />Completed Intermediate From
+                  `Patanjali Rishikul Allahabad`(CBSE).(76%)
+                </li>
+                <li>
+                  <span>2017-2018</span><br />Completed High School From `Ptanjali Rishikul Allahabad`(CBSE).(78%)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <!-- 
+      portfolio ------------------------------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./work-1.png" />
+            <div class="layer">
+              <h3>E-Paramarsh Counselling Website</h3>
+              <p>
+                •	Developed a counselling platform to guide and mentor students in career selection.
+•	Assisted students in identifying suitable colleges aligned with their academic abilities and personal preferences.
+•	Implemented features to enhance user experience and facilitate informed decision-making for prospective students.
+
+              </p>
+              <a href="https://github.com/Princy0204/PROJECT-1"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./work-2.png" />
+            <div class="layer">
+              <h3>Customer Segmentation Model</h3>
+              <p>
+                •	Developed a project focused on analyzing and enhancing understanding of customer behavior and preferences.
+•	Implemented customer segmentation based on common characteristics to drive personalized marketing strategies.
+•	Visualized segmentation results using graphs and data visualizations to improve decision-making.
+
+              </p>
+              <a
+                href="https://github.com/Princy0204/Customer-Segmentation"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact ------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >princypandey241@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+917017204530</p>
+            <br />
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/princy-pandey-a42b66266/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Princy0204"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href=""></a>
+            </div>
+            <a href="./Princy_Resume latest.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Made by <i class="fa-solid fa-heart"></i> Princy Pandey
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://docs.google.com/spreadsheets/d/1A2B3C4D5E6F7G8H9I0J_KLMNOPQRSTUVWXYZ1234567/edit";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Frontend Developer",
+          "Web Developer",
+          "Vedio Editor.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
